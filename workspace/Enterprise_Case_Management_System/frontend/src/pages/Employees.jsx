@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Employees(){return <LookupPage title="Employees" subtitle="Retrieve employee records." placeholder="Employee ID" getRecord={api.getEmployee}/>}

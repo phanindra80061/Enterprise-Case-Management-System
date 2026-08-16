@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Attachments(){return <LookupPage title="Attachments" subtitle="Retrieve attachment metadata." placeholder="Attachment ID" getRecord={api.getAttachment}/>}

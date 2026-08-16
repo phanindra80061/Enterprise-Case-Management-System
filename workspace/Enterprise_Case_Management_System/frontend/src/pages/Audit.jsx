@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Audit(){return <LookupPage title="Audit" subtitle="Retrieve audit entries." placeholder="Audit Log ID" getRecord={api.getAudit}/>}

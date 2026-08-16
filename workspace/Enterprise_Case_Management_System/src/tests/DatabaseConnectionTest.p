@@ -1,0 +1,9 @@
+DEFINE VARIABLE iCount AS INTEGER NO-UNDO.
+FOR EACH customer NO-LOCK:
+    iCount = iCount + 1.
+END.
+
+MESSAGE "ECMS DATABASE CONNECTION SUCCESSFUL!"
+        SKIP
+        "Customer records:"iCount
+     VIEW-AS ALERT-BOX MESSAGE.

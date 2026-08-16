@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Cases(){return <LookupPage title="Cases" subtitle="Retrieve case details." placeholder="CASE-M-002" getRecord={api.getCase}/>}

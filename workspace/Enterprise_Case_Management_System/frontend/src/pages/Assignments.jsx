@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Assignments(){return <LookupPage title="Assignments" subtitle="Retrieve assignment records." placeholder="Assignment ID" getRecord={api.getAssignment}/>}

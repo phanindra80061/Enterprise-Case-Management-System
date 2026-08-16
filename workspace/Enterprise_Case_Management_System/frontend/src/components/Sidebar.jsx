@@ -1,0 +1,3 @@
+import { NavLink } from "react-router-dom";
+const links=[["/","Dashboard"],["/cases","Cases"],["/customers","Customers"],["/employees","Employees"],["/assignments","Assignments"],["/notes","Notes"],["/attachments","Attachments"],["/audit","Audit"]];
+export default function Sidebar(){return <aside className="sidebar"><div className="brand"><strong>ECMS</strong><span>Enterprise Case Management</span></div><nav>{links.map(([to,label])=><NavLink key={to} to={to} end={to==="/"} className={({isActive})=>isActive?"nav-link active":"nav-link"}>{label}</NavLink>)}</nav><div className="backend"><span className="dot"/>PASOE / OpenEdge 12.8</div></aside>}

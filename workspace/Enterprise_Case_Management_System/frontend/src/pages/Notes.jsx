@@ -1,0 +1,1 @@
+import LookupPage from "../components/LookupPage";import {api} from "../services/api";export default function Notes(){return <LookupPage title="Notes" subtitle="Retrieve case notes." placeholder="Notes ID" getRecord={api.getNote}/>}

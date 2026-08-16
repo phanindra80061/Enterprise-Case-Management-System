@@ -1,0 +1,63 @@
+# ============================================
+# Enterprise Case Management System
+# Git Ignore
+# ============================================
+
+# Eclipse / Progress Developer Studio
+.metadata/
+**/.metadata/
+.settings/
+**/.settings/
+.project
+.classpath
+
+# OpenEdge generated / runtime files
+*.r
+*.log
+*.lg
+*.lk
+*.lbi
+*.tmp
+*.bak
+
+# OpenEdge database runtime/support files
+*.bi
+*.ai
+*.st
+*.d1
+*.b1
+*.lic
+
+# PASOE runtime/generated content
+**/logs/
+**/temp/
+**/work/
+**/webapps/*/WEB-INF/lib/
+**/webapps/*/WEB-INF/classes/
+
+# React / Node
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Sonar
+.sonarlint/
+**/.sonarlint/
+
+# Misc
+*.swp
+*.swo
